@@ -4,8 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace HalakAPI.Controllers
 {
-    public class HorgaszokController : Controller
+    [Route("[controller]")]
+    [ApiController]
+    public class HorgaszokController : ControllerBase
     {
+
         private readonly HalakContext _context;
 
         public HorgaszokController(HalakContext context)

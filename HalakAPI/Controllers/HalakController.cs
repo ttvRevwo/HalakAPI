@@ -5,7 +5,9 @@ using HalakAPI.DTOs;
 
 namespace HalakAPI.Controllers
 {
-    public class HalakController : Controller
+    [Route("[controller]")]
+    [ApiController]
+    public class HalakController : ControllerBase
     {
         private readonly HalakContext _context;
 
