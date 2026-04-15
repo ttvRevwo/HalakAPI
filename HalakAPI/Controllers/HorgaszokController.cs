@@ -13,6 +13,7 @@ namespace HalakAPI.Controllers
             _context = context;
         }
 
+
         [HttpGet("/All")]
         public IActionResult GetAllHorgaszok()
         {
